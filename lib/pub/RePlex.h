@@ -1,9 +1,11 @@
 #pragma once
 
-class Foo {
-   public:
-    int GetTheAnswer() const;
+#include <dlfcn.h>
 
-   private:
-    int m_answer = 42;
-};
+void* Load(const char* filepath);
+
+void* LoadSymbol(void* library, const char* symbol);
+
+void Reload(void*& library, const char* filepath);
+
+void PrintError();
