@@ -1,7 +1,2 @@
-compile_commands.json
-
-*.make
-Makefile
-
-bin/
-obj/
+build/
+.xmake/
