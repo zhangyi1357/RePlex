@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-#include <RePlex.h>
->>>>>>> 318ad72 (CMake)
 #include <Test.h>
 
 #include <iostream>
