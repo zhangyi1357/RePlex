@@ -1,7 +1,6 @@
 # this is a shared library with one header file and one cpp file
 # write the CMakeLists.txt file for the library
 
-
 add_library(Test SHARED Test.cpp Test.h)
 
 # add deps RePlex

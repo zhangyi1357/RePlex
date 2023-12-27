@@ -4,4 +4,4 @@
 add_executable(Runtime Main.cpp)
 
 # add dependencies, it depends on RePlex library(header-only)
-target_link_libraries(Runtime PUBLIC RePlex Test)
+target_link_libraries(Runtime PUBLIC RePlex)

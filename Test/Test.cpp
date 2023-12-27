@@ -7,6 +7,5 @@ void foo() {
 }
 }
 
-int bar = 200;
-
-std::array<const char*, 2> g_exports = {"foo", "bar"};
+// int bar = 300;
+int bar = 1000;

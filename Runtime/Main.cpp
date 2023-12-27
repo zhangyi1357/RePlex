@@ -1,6 +1,6 @@
-#include <Test.h>
-
 #include <iostream>
+
+#include "../Test/Test.h"
 
 int main() {
     TestModule::LoadLibrary();

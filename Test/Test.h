@@ -6,8 +6,7 @@
 extern "C" {
 void foo();
 }
-
-extern std::array<const char*, 2> g_exports;
+inline std::array<const char*, 2> g_exports = {"foo", "bar"};
 
 class TestModule : public RePlexModule<TestModule, g_exports.size()> {
    public:
@@ -24,7 +23,9 @@ class TestModule : public RePlexModule<TestModule, g_exports.size()> {
     }
 
    protected:
-    virtual const char* GetPath() const override { return "libTest.so"; }
+    virtual const char* GetPath() const override {
+        return "/home/zhangyi/learning/RePlex/build/Test/libTest.so";
+    }
 
     virtual std::array<const char*, g_exports.size()>& GetSymbolNames()
         const override {
